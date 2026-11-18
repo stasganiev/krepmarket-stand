@@ -1,0 +1,25 @@
+# Базы и двоичные выгрузки - не в Git
+.ib/
+*.1CD
+*.1CL
+*.cfl
+*.dt
+*.cf
+*.cfe
+
+# Служебное
+logs/
+src/cf/ConfigDumpInfo.xml
+src/cf.dump-tmp/
+
+# Локальные настройки и секреты
+stand.local.json
+.env
+.env.*
+!.env.example
+.mcp.local.json
+.claude/settings.local.json
+
+# Редакторы и ОС
+.vscode/settings.json
+Thumbs.db
