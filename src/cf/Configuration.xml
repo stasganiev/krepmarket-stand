@@ -266,6 +266,10 @@
 			<Language>Русский</Language>
 			<Subsystem>ПодключаемыеОтчетыИОбработки</Subsystem>
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
+			<Subsystem>Продажи</Subsystem>
+			<Subsystem>Склад</Subsystem>
+			<Subsystem>НСИ</Subsystem>
+			<Subsystem>ТорговоеЯдро</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ДобавленныйРеквизитФон</StyleItem>
 			<StyleItem>ВладелецФайловШрифт</StyleItem>
@@ -611,6 +615,8 @@
 			<Role>ЧтениеВнешнихПользователей</Role>
 			<Role>ЧтениеДополнительныхОтчетовИОбработок</Role>
 			<Role>ЧтениеУчетныхЗаписейЭлектроннойПочты</Role>
+			<Role>Менеджер</Role>
+			<Role>ТолькоЧтение</Role>
 			<CommonTemplate>ОписаниеИзмененийСистемы</CommonTemplate>
 			<CommonTemplate>КомпонентаСканированияДокументов_3_0_1_1033</CommonTemplate>
 			<CommonTemplate>ПолучениеДереваОбработчиковОбновления</CommonTemplate>
@@ -967,6 +973,10 @@
 			<Catalog>УчетныеЗаписиЭлектроннойПочты</Catalog>
 			<Catalog>Файлы</Catalog>
 			<Catalog>ХранилищеДвоичныхДанных</Catalog>
+			<Catalog>Номенклатура</Catalog>
+			<Catalog>Контрагенты</Catalog>
+			<Document>ПоступлениеТоваров</Document>
+			<Document>ЗаказКлиента</Document>
 			<Enum>ВариантыОчисткиФайлов</Enum>
 			<Enum>ВариантыПубликацииДополнительныхОтчетовИОбработок</Enum>
 			<Enum>ВариантыСжатияTIFF</Enum>
@@ -1002,6 +1012,7 @@
 			<Enum>ФорматыСохраненияОтчетов</Enum>
 			<Enum>ФорматыХраненияМногостраничныхФайлов</Enum>
 			<Enum>ЦветностиИзображения</Enum>
+			<Enum>СтатусыЗаказов</Enum>
 			<Report>ДлительностьОтложенногоОбновления</Report>
 			<Report>ОбъемНенужныхФайлов</Report>
 			<Report>ПользователиПоПодразделениям</Report>
@@ -1061,6 +1072,8 @@
 			<InformationRegister>УдалитьБезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
 			<InformationRegister>УдалитьДвоичныеДанныеФайлов</InformationRegister>
 			<InformationRegister>УдалитьХранимыеФайлыВерсий</InformationRegister>
+			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
+			<AccumulationRegister>ОстаткиТоваров</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
