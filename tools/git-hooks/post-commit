@@ -1,0 +1,13 @@
+#!/bin/sh
+# Резервная копия ветки etalon: после каждого коммита в etalon - bundle в папку из git config km.etalonBackup
+# (у автора - приватный репозиторий курса). В bundle только то, чего нет в main, + теги lesson-*/etalon-*.
+branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+[ "$branch" = "etalon" ] || exit 0
+dir=$(git config km.etalonBackup)
+[ -n "$dir" ] || exit 0
+mkdir -p "$dir"
+tags=$(git tag -l 'lesson-*' 'etalon-*')
+if git bundle create "$dir/etalon.bundle" etalon $tags ^main >/dev/null 2>&1; then
+  echo "backup: $dir/etalon.bundle"
+fi
+exit 0

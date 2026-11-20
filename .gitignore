@@ -23,3 +23,7 @@ stand.local.json
 # Редакторы и ОС
 .vscode/settings.json
 Thumbs.db
+
+# Данные проекта П-1 - выдаются на платформе курса, в публичный репозиторий не попадают
+fixtures/letters/
+fixtures/analysis/
